@@ -1,6 +1,6 @@
 # Data Pipeline: TripData Analysis with Metabase
 
-Este projeto consiste em um pipeline de dados que processa dados de viagens (CSV), armazena-os em um banco de dados PostgreSQL via Docker e disponibiliza as informações para visualização no Metabase.
+Este projeto consiste em um pipeline de dados que processa dados de viagens de um dataset kaggle (CSV), armazena-os em um banco de dados PostgreSQL via Docker e disponibiliza as informações para visualização no Metabase.
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -10,6 +10,12 @@ Este projeto consiste em um pipeline de dados que processa dados de viagens (CSV
 * **Docker & Docker Compose:** Gerenciamento de infraestrutura.
 * **Python (Pandas & SQLAlchemy):** Tratamento de dados e carga (ETL).
 * **Orquestração:** Docker Compose
+
+## Arquitetura do Projeto
+
+Na imagem abaixo, pode ser vista a arquitetura utilizada neste projeto. Para criar essa diagramação, utilizei o Canvas:
+
+
 
 ## 📂 Estrutura do Repositório
 
@@ -47,6 +53,10 @@ docker-compose up -d
 
 ```bash
 python -m venv .venv #Cria o ambiente virtual
+
+source venv/bin/activate # Ativar amvbiente (Linux/Mac)
+
+venv\Scripts\activate # (Windows)
 
 pip install -r requirements.txt #Intala as dependencias
 
